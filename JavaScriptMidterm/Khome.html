@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale:1.0">
+	<title>Klassik Home</title>
+	<link rel="stylesheet" href="khstyle.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@6/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/58e8f05da7.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-coverflow/1.2.1/jquery.coverflow.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+        });
+    </script>
+</head>
+<body>
+	
+	<nav>
+        <label class="logo"><img src="https://i.ibb.co/XSdQJnQ/Klassik-Eats.png" style="padding-top: 10px;"height="70px" width="10%"></label>
+        <ul class="show">
+            <li><a class="bord" href="Khome.html">Home</a></li>
+            <li><a class="bord" href="about.html">About Us</a></li>
+            <li><a class="bord" href="contact.html">Contact Us</a></li>
+            <li><a class="bord" href="Krecipes.html">KlassiK Recipes</a></li>
+            <li><a class="bord" href="faq.html">Klassik FAQs</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+	
+	<div class="container">
+		
+		<section class="normal">
+			<div class="background bg-1"></div>
+			<h1 style="color:#6F4E37">Klassik Eats</h1>
+			<a href="https://www.facebook.com/profile.php?id=61552021183489">
+			<img src="https://i.ibb.co/NrP6dHy/Untitled-design-3.png" width="625" height="625">
+			</a>
+		</section>
+		
+		<section class="parallax">
+			<div>
+			<h1 style="color:#6F4E37">Home of Klassik</h1>
+			</div>
+		</section>
+
+		<section id="team">
+
+			<div class="teamhead">
+				<h3>Author's Picks</h3>
+			</div>
+	
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+	
+				<div class="swiper-slide">
+					 <div class="teambox">
+				<div class="tbimg">
+					<img src="https://i.ibb.co/qsJQwfP/download.jpg" alt="download">
+					
+				</div>
+				<div class="tbtext">
+					<strong>Silvanas<br> Frozen Buttercream Cookie</strong>
+				</div>
+				<div class="social">
+					<a href="https://www.youtube.com/watch?app=desktop&v=_GZkmePdoeg">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+
+				</div>
+					</div>
+				</div>
+				<div class="swiper-slide"> 
+					<div class="teambox">
+			   <div class="tbimg">
+				   <img src="https://i.ibb.co/vwnK4D8/1244.jpg">
+				   
+			   </div>
+			   <div class="tbtext">
+				   <strong>Piaya<br>Stuffed Unleavend Flatbread</strong>
+			   </div>
+			   <div class="social">
+				   <a href="https://www.youtube.com/watch?app=desktop&v=TfYOk2NY74o">
+					<i class="fa-brands fa-youtube"></i>
+			   </div>
+				   </div>
+			   </div>
+			   <div class="swiper-slide">
+				<div class="teambox">
+				 <div class="tbimg">
+			   <img src="https://i.ibb.co/djVgrPf/maxresdefault-1.jpg">
+			   
+				 </div>
+				<div class="tbtext">
+					<strong>Chicken Inasal</strong><strong>Filipino Grilled Chicken</strong>
+				  </span>
+				</div>
+				 <div class="social">
+					<a href="https://www.youtube.com/watch?app=desktop&v=Lm9eAUMKFiA">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</div>
+			   </div>
+				</div>
+			   
+				</div>
+			</div> 
+
+		
+	
+
+		
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+			  effect: "coverflow",
+			  grabCursor: true,
+			  centeredSlides: true,
+			  slidesPerView: "auto",
+			  coverflowEffect: {
+				rotate: 20,
+				stretch: -20,
+				depth: 120,
+				modifier: 3,
+				slideShadows: true,
+			  },
+			});
+		  </script>
+		  <script>
+			$(document).ready(function () {
+				var swiper = new Swiper(".mySwiper", {
+					effect: "coverflow",
+  			  grabCursor: true,
+  			  centeredSlides: true,
+   			 slidesPerView: "auto",
+  			  coverflowEffect: {
+  			    rotate: 50,
+   			   stretch: 0,
+    		  depth: 100,
+    		  modifier: 1,
+    	  slideShadows: true,
+  		  },
+  		  pagination: {
+   		   el: ".swiper-pagination",
+   		 },
+ 		 });
+			});
+		</script>
+		  <script src="khjs.js"></script>
+		
+	</div>
+	<hr>
+	
+	
+	
+	
+	</div>
+
+
+</body>
+</html>
+				

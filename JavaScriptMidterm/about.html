@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>About Us</title>
+	<link rel="stylesheet" href="about.css">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/58e8f05da7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <label class="logo"><img src="https://i.ibb.co/XSdQJnQ/Klassik-Eats.png" style="padding-top: 10px;"height="70px" width="10%"></label>
+        <ul class="show">
+            <li><a class="bord" href="Khome.html">Home</a></li>
+            <li><a class="bord" href="about.html">About Us</a></li>
+            <li><a class="bord" href="contact.html">Contact Us</a></li>
+            <li><a class="bord" href="Krecipes.html">KlassiK Recipes</a></li>
+            <li><a class="bord" href="faq.html">Klassik FAQs</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <section id="team">
+
+        <div class="teamhead">
+            <h3>The Klassik Team</h3>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                 <div class="teambox">
+            <div class="tbimg">
+                <img src="https://i.ibb.co/tcL3NBY/368334786-1054296305557967-8898704801489927148-n.jpg" alt="Joseph">
+                
+            </div>
+            <div class="tbtext">
+                <strong>Joseph Concepcion <br> Founder</strong>
+                <span>Amatuer Graphic designer<br>
+                    Novice Tennis player <br>
+                    Novice Wild game hunter</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/joseph.concepcion.967806">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Josephzyrielpconcepcion@su.edu.ph">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+                </div>
+            </div>
+            <div class="swiper-slide"> 
+                <div class="teambox">
+           <div class="tbimg">
+               <img src="https://i.ibb.co/F8jVnyB/184231578-103025921982399-8817580608949492039-n.jpg" alt="Jethro">
+               
+           </div>
+           <div class="tbtext">
+               <strong>Jehtro Aldecoa<br>Co-Founder</strong>
+               <span>Basketball Lover</span>
+           </div>
+           <div class="social">
+               <a href="#">
+                   <i class="fa fa-facebook"></i>
+               </a>
+               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jethropaldecoa@su.edu.ph">
+                   <i class="fa-solid fa-envelope"></i>
+               </a>
+           </div>
+               </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="teambox">
+             <div class="tbimg">
+           <img src="https://i.ibb.co/L5TXszX/31311931-1765107526882578-8173600945024794624-n.jpg" alt="Khryz">
+           
+             </div>
+            <div class="tbtext">
+                <strong>Khryz Exito</strong><strong>Lead Designer</strong>
+             <span>Likes Coding<br>
+              </span>
+            </div>
+             <div class="social">
+                <a href="https://www.facebook.com/Khryz.Exito">
+               <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khryzlexito@su.edu.ph">
+               <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+           </div>
+            </div>
+           
+            </div>
+        </div> 
+                      
+       
+
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: -20,
+            depth: 120,
+            modifier: 3,
+            slideShadows: true,
+          },
+        });
+      </script>
+</body>
+</html>

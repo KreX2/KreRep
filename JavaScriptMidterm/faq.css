@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:wght400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background: #FFFBEB;
+    color: #6F4436;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: #6F4436;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: bisque;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active, a:hover {
+    border: 1px solid #fffbeb;
+    transition: .5s;
+}
+
+label.logo {
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        background: #D8AC87;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active, a:hover {
+        border: none;
+        color: #6F4436;
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+.section1 {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #6F4436;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.8rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

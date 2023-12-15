@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:wght400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #FFFBEB;
+	overflow-y: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+
+nav{
+	height: 80px;
+	width: 100%;
+	background: #6F4436;
+	position: fixed;
+	z-index: 1000;
+}
+
+nav ul{
+	float: right;
+	margin-right: 40px;
+}
+
+nav li{
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+
+nav a{
+	color: bisque;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+
+a.active,a:hover{
+	border: 1px solid #fffbeb;
+	transition: .5s;
+}
+
+label.logo{
+	padding: 0 100px;
+	line-height: 80px;
+}
+
+nav #icon{
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+	section{
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        background: #D8AC87;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active, a:hover {
+        border: none;
+        color: #6F4436;
+    }
+    nav ul.show {
+        left: 0;
+    }
+	section{
+        padding-top: 80px;
+    }
+}
+
+
+.container {
+	height: 100vh;
+
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+}
+.parallax {
+	width: 100vw;
+	height: 100vh;
+	background: url("https://i.ibb.co/1rXK5ff/negros-island.png");
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: hidden;
+	transform-style:preserve-3d;
+}
+.background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	Left: 0;
+	z-index:-1;
+	overflow: hidden;
+	
+	
+}
+.bg-1 {
+	color: #FFFBEB;
+	overflow: hidden;
+}
+
+.normal {
+	width: 100%;
+	height: 90vh;
+	background: #FFFBEB;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	overflow: hidden;
+	
+}
+h1 {
+	margin: 0 auto;
+	width: 90vw;
+	font-size: 130px;
+	font-weight: 900;
+	Line-height: 1.1;
+	letter-spacing: -2px;
+	color: #FFFBEB;
+	word-spacing: 100vw;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+.parallax h1 {
+	font-size: 60px;
+	color: #FFFBEB;
+	text-shadow: 0 10px 10px rgba(0,0,0,0.2);
+	overflow: hidden;
+	
+}
+.parallax:nth-child(1) h1{
+	text-align: left;
+	overflow: hidden;
+}
+.normal h1 {
+	color: #333;
+	overflow: hidden;
+	text-align: left;
+	padding-left: 100px;
+	
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.parallax::-webkit-scrollbar {
+  display: none;
+}
+.normal a {
+	padding-right: 90px;
+}
+.overview {
+	font-family: "Helvetica";
+	display: flex;	
+}
+.overview p {
+	font-weight: 0;
+	font-size: 40px;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 99vh;
+	margin: 10px;
+	z-index: 1;
+	border: 5px solid black;
+	text-align: center;
+	
+}
+
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.teamhead h3{
+    color: #6f363a;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.teambox{
+    width: 100%;
+    padding: 20px;
+    user-select: none;
+}
+.tbimg{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+.tbimg::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+}
+.tbimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    filter: saturate(2);
+}
+
+.tbtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tbtext strong{
+    color:#6F4436;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.tbtext span{
+    color: #6F4436;
+    font-size: 0.9rem;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.social a{
+    margin: 0px 10px;
+    color: #6f363a;
+    font-size: 0.9rem;
+    transition: all ease 0.3s;
+}
+
+.social a:hover{
+    color: gray;
+}
+
+.swiper{
+    max-width: 745px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.swiper-slide{
+    width: 300px !important;
+    opacity: 1;
+    margin: 50px 0px;
+    margin-top: 0px;
+}
+
+.swiper-slide:active{
+    opacity: 1;
+    border: 10px solid #6F4436;
+}
+
+
+
+@media (max-width: 768px) {
+    label.logo {
+        font-size: 28px; 
+        padding-left: 20px; 
+    }
+
+    nav ul {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    section {
+        padding-top: 60px; 
+    }
+
+    .normal h1 {
+        padding-left: 20px; 
+    }
+
+    .swiper-slide {
+        width: 100% !important; 
+    }
+}
